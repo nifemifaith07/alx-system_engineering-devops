@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -na /* n to display UID or GID */
+ls -na
