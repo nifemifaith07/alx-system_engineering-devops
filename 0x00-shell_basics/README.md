@@ -6,7 +6,7 @@ Bash
 # Resources
 ## Read or watch:
 
-    [![What Is “The Shell”?](https://alx-intranet.hbtn.io/rltoken/vwO91sqNBgRL03BLu-ueiA)
+    [What Is “The Shell”?](https://alx-intranet.hbtn.io/rltoken/vwO91sqNBgRL03BLu-ueiA.com)
     Navigation
     Looking Around
     A Guided Tour
