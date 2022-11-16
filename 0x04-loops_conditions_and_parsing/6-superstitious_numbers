@@ -9,6 +9,7 @@ a=0
 while [ $a -lt 20 ]
 do
 	((a++))
+	echo "$a"
 	case $a in
 	4)
 		echo "bad luck from China"
@@ -20,7 +21,7 @@ do
 		echo "bad luck in Italy"
 		;;
 	*)
-		echo "$a"
+		continue
 		;;
 	esac
 done
