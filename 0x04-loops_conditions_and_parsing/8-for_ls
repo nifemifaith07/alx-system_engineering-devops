@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# displays, The content of the current directory In a list format
+# displays the content of the current directory in a list format
 # Where only the part of the name after the first dash is displayed
 
 for i in *
