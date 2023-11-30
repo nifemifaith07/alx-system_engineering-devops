@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
-# stops 7-highlander process
-# cannot use kill or killall
+# displays: 'To infinity and beyond' indefinitely
+# With a sleep 2 in between each iteration
+# I am invincible!!! when receiving a SIGTERM signal
 
-pkill -15 -f "7-highlander"
+I am invincible!!!
+trap "echo I am invincible!!!" SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
