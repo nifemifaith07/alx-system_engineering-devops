@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Creates the file /var/run/holbertonscript.pid containing its PID
+# Creates the file /var/run/myscript.pid containing its PID
 # Displays To infinity and beyond indefinitely
 # Displays I hate the kill command when receiving a SIGTERM signal
 # Displays Y U no love me?! when receiving a SIGINT signal
@@ -25,13 +25,13 @@ SIGINT_hand()
     echo "Y U no love me?!"
 }
 
-
-
 trap "SIGTERM_hand" SIGTERM
 trap "SIGINT_hand" SIGINT
 trap "SIGQUIT_hand" SIGQUIT
 
-pgrep -f 100-process_and_pid_file >> /var/run/myscript.pid
+PID=$(pgrep -f "100-process_and_pid_file")
+echo "$PID" > /var/run/myscript.pid
+
 while $1
 do
 echo "To infinity and beyond";
