@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# run Apache on the container & return a page containing Hello Holberton
+
+# Install Apache2
+apt-get install -y apache2
+
+# Configure Apache to avoid warnings
+echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+# Start Apache service
+service apache2 start
+
+# Keep the script running to keep the container alive
+tail -f /dev/null
