@@ -7,4 +7,4 @@ apt-get install apache2 -y
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Start Apache service
-/etc/init.d/apache2 start
+service apache2 start
