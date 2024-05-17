@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # run Apache on the container & return a page containing Hello Holberton
 
-# Install Apache2
-apt-get install -y apache2
+apt-get install apache2 -y
 
 # Configure Apache to avoid warnings
 echo "ServerName localhost" >> /etc/apache2/apache2.conf
