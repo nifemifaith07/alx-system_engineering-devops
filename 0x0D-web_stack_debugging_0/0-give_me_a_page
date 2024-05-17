@@ -9,6 +9,3 @@ echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # Start Apache service
 service apache2 start
-
-# Keep the script running to keep the container alive
-tail -f /dev/null
