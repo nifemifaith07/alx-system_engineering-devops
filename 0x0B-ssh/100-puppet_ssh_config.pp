@@ -1,12 +1,7 @@
-# manifest to confiqure SSH Client
+# manifest to confiqure global SSH Client
 
-file { '/hom/vagrante/.ssh':
-  ensure  => directory,
-  mode    => '0700',
-}
-
-file_line { ' identity file':
-  path    => '/home/vagrant/.ssh/config',
+file_line { ' Declare identity file':
+  path    => '/etc/ssh/ssh_config',
   line    => 'IdentityFile ~/.ssh/school',
   match   => '^IdentityFile',
   ensure  => present,
@@ -14,7 +9,7 @@ file_line { ' identity file':
 
 # Disable password authentication
 file_line { 'Turn off passwd auth':
-  path    => '/home/vagrant/.ssh/config',
+  path    => '/etc/ssh/ssh_config',
   line    => 'PasswordAuthentication no',
   match   => '^PasswordAuthentication',
   ensure  => present,
